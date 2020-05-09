@@ -1,0 +1,130 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+body {
+    background: lightgrey;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    font-size: 1rem;
+    color: white;
+    float: left;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-color: rgb(240, 198, 10);
+    text-decoration-style: double;
+}
+
+a {
+    margin: 2rem;
+    text-decoration: none;
+    padding-top: 2rem;
+    margin-top: 2em;
+}
+
+.interview {
+    background: lightgrey;
+    text-align: center;
+}
+
+.img {
+    max-width: 400px;
+    display: block;
+    border-radius: 34% 20% 50% 12%;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+    margin-left: 7%;
+    float: left;
+    position: absolute;
+    width: 60%;
+    display: inline-block;
+}
+
+header {
+    background-color: black;
+    color: #ffffff;
+    padding: 0 1.25rem;
+    top: 0;
+    display: inline;
+    position: fixed;
+    width: 100%;
+    z-index: 10001;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    left: 0;
+    float: left;
+}
+
+.nav a {
+    background-color: black;
+    text-align: right;
+    color: white;
+    float: right;
+}
+
+.link {
+    font-weight: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.about-content {
+    background-color: #E7C57A;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-left: 26rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    line-height: 3rem;
+    padding-top: 1.5rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    display: inline-block;
+}
+
+.notes {
+    text-align: left;
+    background: white;
+    box-shadow: 2px 2px 24px -2px #515e7033;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 22px 38px;
+    max-width: 1800px;
+    margin-top: 0.7rem;
+}
+
+.content-page {
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+}
+
+.notes:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: black;
+    color: #ffffff;
+    text-decoration: none;
+    bottom: 0;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    z-index: 10001;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    line-height: inherit;
+    left: 0;
+}
