@@ -11,24 +11,32 @@
 
 <body>
     <main>
-        <header>
-            <h1>Kurs frontend</h1>
-            <nav class="nav">
-                <a href="index.html">Strona główna</a>
-                <a href="links.html">Przydatne linki</a>
+        <header class="header">
+            <nav class="navigation">
+                <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+                <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+                <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+                <a class="navigation__link" href="links.html">Przydatne linki</a>
             </nav>
         </header>
 
-        <div class="content-page">
-            <section>
-                <img class="img" src="https://images.unsplash.com/photo-1547472751-ee012a99b3c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="img_content">
-            </section>
 
-            <section class="about-content">
+        <section class="page__content">
+            <h1>Kurs frontend</h1>
+        </section>
+
+        <div class="about__content">
+            <section class="about__content--img">
+                <img src="https://images.unsplash.com/photo-1547472751-ee012a99b3c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="img_content">
+            </section>
+            <section class="about__content--description">
                 <h2>Kilka słów o mnie</h2>
                 <p>Mariola- matka polka multitaskingowa, IT project manager. Uwielbiam swój wolny czas spędzać na tarasie, sadząc kwiaty.Ta strona została stworzona w ramach kursu frontendu, aby lepiej zorganizować moje notatki. 3...2...1...start!</p>
             </section>
+        </div>
 
+
+        <div class="content-page">
             <section class="notes">
                 <h2>Notatki z kursu</h2>
                 <article>
@@ -118,7 +126,8 @@
                         </section>
                         <section>
                             <h4>4. Magia programowania</h4>
-                            <p>Programowanie jak gotowanie- czyli wszystkie kroki w przepisie jak i programowania powinny być w określonej kolejności. Następujące po sobie kroki możemy nazwać algorytmami mogą być one przedstawione w formie schematu blokowego.<br/>                                Programowanie jest to przedstawienie "życia" i języka ludzkiego na język zrozumiały dla komputera.
+                            <p>Programowanie jak gotowanie- czyli wszystkie kroki w przepisie jak i programowania powinny być w określonej kolejności. Następujące po sobie kroki możemy nazwać algorytmami mogą być one przedstawione w formie schematu blokowego.<br
+                                /> Programowanie jest to przedstawienie "życia" i języka ludzkiego na język zrozumiały dla komputera.
                             </p>
                         </section>
                     </div>
@@ -300,7 +309,8 @@
                                 <li>scroll - również nam ukrywa ale możemy podejrzeć text za pomoca suwaka</li>
                                 <li>auto - jeśli treść wychodzi poza pole to również pojawia nam sie opcja suwaka</li>
                                 <li>initial - używa widocznej wartości domyślnej</li>
-                                <li>inherit - (dziedziczenie) ustawia przepełnienie na wartość jego elementu nadrzędnego</li>
+                                <li>inherit - (dziedziczenie) ustawia przepełnienie na wartość jego elementu nadrzędnego
+                                </li>
                             </ul>
                         </section>
                         <section>
@@ -317,18 +327,21 @@
                             <p>jest to niewidzialny prostokąt którym są otoczone wszystkie elementy.</p>
                             <img src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png" alt="boxmodel">
                             <h5>4.1. padding - wewnętrzny margines</h5>
-                            <p>- jeśli chcemy zapisać je w jednej lini to musimy wartości wpisać według wskazówek zegara <br /> -jeśli podamy tylko dwie wartości- traktujemy je wtedy jako wartości lustrzane, czyli dla top i bottom będzie taka sama wartość
-                                i dla left i right będzie taka sama</p>
+                            <p>- jeśli chcemy zapisać je w jednej lini to musimy wartości wpisać według wskazówek zegara
+                                <br /> -jeśli podamy tylko dwie wartości- traktujemy je wtedy jako wartości lustrzane, czyli dla top i bottom będzie taka sama wartość i dla left i right będzie taka sama</p>
                             <h5>4.2. border - zewnętrzny margines- obramowanie</h5>
-                            <p>- width - określamy grubość <br/>- style - jaki rodzaj chcemy używać -solid/dotted/dash/double/groove/ridge/inset/outset<br />- color - kolor<br />- radius - zaokrąglenie</p>
+                            <p>- width - określamy grubość <br />- style - jaki rodzaj chcemy używać -solid/dotted/dash/double/groove/ridge/inset/outset
+                                <br />- color - kolor<br />- radius - zaokrąglenie
+                            </p>
                             <h5>margin - odległośc od innych elementów, zapisujemy jak w paddingu</h5>
                             <p>- auto - wartość która jest różna w zależności jaki jest display.<br />- block- elementy ułożą się na środku body, w równych odstępach, ale musi mieć ustaloną szerokość, zeby wiadomo było do czego ma centrować.<br />- inline-
                                 nic nam nie da przyjęcie wartości auto </p>
                         </section>
                         <section>
                             <h4>5. Box-sizing</h4>
-                            <p>Domyślną wartością naszego box-sizing jest content-box, według ktorej rozumiemy, że jeśli ustalimy sobie width na elemencie to wtedy nie ma to wpływu na padding i margin.<br/>Aby móc brac pod uwagę całą szerokośc naszego elementu
-                                (wraz z paddingiem, borderem i marginem, ale bez zmieniania właściwoścci dla wszystkiego</p>
+                            <p>Domyślną wartością naszego box-sizing jest content-box, według ktorej rozumiemy, że jeśli ustalimy sobie width na elemencie to wtedy nie ma to wpływu na padding i margin.
+                                <br />Aby móc brac pod uwagę całą szerokośc naszego elementu (wraz z paddingiem, borderem i marginem, ale bez zmieniania właściwoścci dla wszystkiego
+                            </p>
                         </section>
                         <section>
                             <h4>6. Position</h4>
@@ -337,16 +350,73 @@
                                 <li>relative</li>
                                 <li>absolute</li>
                                 <li>fixed - przyklejony do strony, np nagłówek</li>
-                                <li>sticky - przykleja sie do ekranu, ale dopiero w momencie gdy dotyka końca ekranu</li>
+                                <li>sticky - przykleja sie do ekranu, ale dopiero w momencie gdy dotyka końca ekranu
+                                </li>
                             </ul>
                         </section>
-                    </div>
-                </article>
+                        <section>
+                            <h4>7. Float</h4>
+                            <p>Nie powinniśmy używać tego to centrowania, wyrownywania, np. jeśli użyjemy float:left, zbliza nam nasz element najbliżej lewej strony jak to tylko możliwe.</p>
+                        </section>
+                        <section>
+                            <h4>8. JS:Typy danych i immutability</h4>
+                            <p>Zmienna to nie wartość, ona jedynie wskazuje nam na jakieś wartości, które przyjmujemy. W każdym języku programowania sa zmienne, w JS nazywamy je camelCasem. Zmienne są jak młody pelikan- łykną wszystko.</p>
+                            <h5>8.1.Zmienne w JS</h5>
+                            <ul>
+                                <li>let - zmienne, których połączenie możemy przypinać, ale ich nie definiujemy, wprowadzamy je tylko raz</li>
+                            </ul>
+                            <p>let isHappy = false;<br /> isHappy = tak;<br /> isHappy = true;</p>
+                            <ul>
+                                <li>const - zmienne mające stale połączenie z jedną wartością</li>
+                            </ul>
+                            <p>const name = 'Mariola';<br />const age = 28;<br />przykład gniazdka i ładowarki</p>
+                            <ul>
+                                <li>var</li>
+                            </ul>
+                            <h5>8.2. Typy proste w JS = primitive values</h5>
+                            <ul>
+                                <li>string - 'tekstowy'</li>
+                                <li>number - liczbowy</li>
+                                <li>bigint - liczba powyżej 2 do 53</li>
+                                <li>boolen - wartości logiczne true/false</li>
+                                <li>null - wartośc celowo niezdefiniowana</li>
+                                <li>undefined - brak definicji</li>
+                                <li>symbol - tworzy unikalne opakowanie</li>
+                            </ul>
+                            <p>Sprawdzanie jakiego typu jest zmienna- typeof nazwa zmiennej. Ważne jest to że nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi a zmiennymi.=Immutability=niezmienność
+                            </p>
+                        </section>
+                        <section<>
+                            <h4>9. BEM = Block Element Modifier</h4>
+                            <p>Powstał przy pracy nad wysszukiwarką w Rosji, polega na spejalnym ukladzie nazw klas.</p>
+                            <h5>Dlaczego powstał?</h5>
+                            <ul>
+                                <li>problem z logicznym nazywaniem klas</li>
+                                <li>brak ujednoliconego sposobu stylowania</li>
+                                <li>importanty, nadpisywanie rzeczy</li>
+                                <li>brak narzędzia odwzorowania struktur html w css</li>
+                                <li>stylowanie kilkoma klasami, powtarzające się nazwy</li>
+                            </ul>
+                            <h5>Z czego się składa BEM</h5>
+                            <ol>
+                                <li>Block - nadrzędny element</li>
+                                <li>Element - część bloku (nie musi być bezpośrednim dzieckiem)</li>
+                                <li>Modifier - modyfikator - jeśli element występuje w kilku wariacjach tworzymy dodatkową klasę</li>
+                            </ol>
+                            <h5>Sposób zapisu</h5>
+                            <p>block__element--modifier, aby lepiej to wyjaśnić poniżej przykład ze zdjęciem</p>
+                            <img src="bem.PNG" alt="bem-picture">
+                            <p>a także zobrazowanie jak to działa w htmlu</p>
+                            <img src="bem- html.PNG" alt="bem-picture- html">
+                            <p>a tutaj jako to wygląda w css</p>
+                            <img src="bem- css.PNG" alt="bem-picture- css">
+            </section>
+            </div>
+            </article>
             </section>
         </div>
         <footer class="footer">
-            <br/>
-            <br/>
+            <br />
         </footer>
     </main>
     <script src="main.js"></script>
