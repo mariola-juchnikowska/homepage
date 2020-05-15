@@ -82,124 +82,27 @@ body {
     max-width: 30rem;
     margin: 1rem;
     padding: 1rem;
-    ;
+}
+
+.week-summary__week {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #CF5C36;
+    border:
+}
+
+.week-summary__description--title {
+    text-decoration: underline;
+    color: #EFC88B;
+    font-weight: bold;
+}
+
+.week-summary__description--subtitle {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .notes__img {
     width: 30rem;
 }
-
-
-/*
-body {
-    background: lightgrey;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-}
-
-h1 {
-    font-size: 1rem;
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h3 {
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-decoration-color: rgb(240, 198, 10);
-    text-decoration-style: double;
-}
-
-.header {
-    background-color: black;
-    padding: 0 1.25rem;
-    top: 0;
-    display: inline;
-    position: fixed;
-    width: 100%;
-    z-index: 10001;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    left: 0;
-    float: left;
-}
-
-.navigation a {
-    text-align: right;
-    float: right;
-}
-
-.navigation__link {
-    color: white;
-    display: inline-block;
-    font-weight: 1rem;
-    font-size: 1rem;
-}
-
-.navigation__link--homepage {
-    background: rgb(236, 162, 50, 0.2)
-}
-
-.about__content {
-    background: #e7c57a;
-    display: block;
-}
-
-.about__content-img {
-    max-width: 300px;
-    border-radius: 34% 20% 50% 12%;
-    margin-bottom: 8rem;
-    margin-top: 3rem;
-    margin-left: 7%;
-    float: left;
-    position: absolute;
-}
-
-.about__content-description {
-    text-align: center;
-}
-
-.notes {
-    text-align: left;
-    background: white;
-    box-shadow: 2px 2px 24px -2px #515e7033;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 22px 38px;
-    max-width: 1800px;
-    margin-top: 0.7rem;
-}
-
-.notes:hover {
-    opacity: 0.8;
-}
-
-.week--summary {}
-
-.week--summary__title {}
-
-.week--summary__description {}
-
-footer {
-    background: black;
-    color: #ffffff;
-    text-decoration: none;
-    bottom: 0;
-    display: grid;
-    position: fixed;
-    width: 100%;
-    z-index: 10001;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    line-height: inherit;
-    left: 0;
-}
-
-*/
