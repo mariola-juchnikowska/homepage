@@ -5,41 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurs WTF</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-
+    <!--  <link href="style.css" rel="stylesheet" type="text/css"> -->
 </head>
 
 <body>
-    <main>
-        <header class="header">
-            <nav class="navigation">
-                <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
-                <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
-                <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-                <a class="navigation__link" href="links.html">Przydatne linki</a>
-            </nav>
+    <header class="header">
+
+        <nav class="navigation">
+            <a class="navigation__logo" href="index.html">WTF_MJ</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+            <a class="navigation__link" href="links.html">Przydatne linki</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <header class="main__header">
+            <h1 class="">Kurs frontend</h1>
         </header>
 
+        <section class="about">
+            <img class="about__img" src="https://images.unsplash.com/photo-1547472751-ee012a99b3c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="img_content">
 
-        <section class="page__content page__content--js">
-            <h1>Kurs frontend</h1>
-        </section>
-
-        <div class="about__content">
-            <section class="about__content--img">
-                <img src="https://images.unsplash.com/photo-1547472751-ee012a99b3c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="img_content">
-            </section>
-            <section class="about__content--description">
+            <section class="about__description">
                 <h2>Kilka słów o mnie</h2>
                 <p>Mariola- matka polka multitaskingowa, IT project manager. Uwielbiam swój wolny czas spędzać na tarasie, sadząc kwiaty.Ta strona została stworzona w ramach kursu frontendu, aby lepiej zorganizować moje notatki. 3...2...1...start!</p>
             </section>
-        </div>
+        </section>
 
         <section class="notes">
-            <h2>Notatki z kursu</h2>
-            <article class="week--summary">
-                <h3 class="week--summary__title">Tydzień 1</h3>
-                <section class="week--summary__description">
+            <h2 class="notes__title">Notatki z kursu</h2>
+
+            <article class="week-summary">
+                <h3 class="week-summary__title">Tydzień 1</h3>
+                <section class="week-summary__description">
                     <h4>1. Wstęp do kursu + zasady.</h4>
                     <ul>
                         <li>Wycisz powiadomienia.</li>
@@ -71,363 +70,323 @@
                 </section>
             </article>
 
-            <article>
-                <div class="week2">
-                    <h3>Tydzień 2</h3>
-                    <section>
-                        <h4>1. Warstwy strony internetowej.</h4>
-                        <p>Cebula ma warstwy, ogry mają warstwy i strona www też ma warstwy.</p>
-                        <ul>
-                            <li>Warstwa 0 - Treść - najważniejsza część- bazowa</li>
-                            <li>Warstwa 1 - Semantyka - HTML</li>
-                            <li>Warstwa 2 - Prezentacja - CSS</li>
-                            <li>Wartswa 3 - Interakcja - JS</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>2. HTML</h4>
-                        <p>HTML to skrót od HyperText Markup Lanaguage. Jest to język znaczników, a nie programowania. Składa się ze znacznikó, tagów, elementów.</p>
-                        <h5>2.1. Budowa znacznika:</h5>
-                        <p>&lt;znacznik atrybut="wartość"&gt;treść&lt;/znacznik&gt;</p>
-                        <p>semantyczny= mający znaczenie</p>
-                        <h5>2.2. Znaczniki</h5>
-                        <ul>
-                            <li>&lt;main&gt; - główna część dokumnetu</li>
-                            <li>&lt;section&gt; - sekcje dokumentu, pod względem logicznego podziału </li>
-                            <li>&lt;article&gt; - samodzielne treści, artykuły w gazecie</li>
-                            <li>&lt;header&gt; - nagłówek dokumentu, sekcji, artykułu</li>
-                            <li>&lt;footer&gt; - stopka dokumnetu, sekcji, artykułu</li>
-                            <li>&lt;h1-h6&gt; - tesktowe nagłówki tytułowe- dokumentu, sekcji, artykułu</li>
-                            <li>&lt;p&gt; - paragraf, akapit</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>3. CSS</h4>
-                        <p>CSS to Cascading Style Sheets- kaskadowe arkusze stylów. Odpowiadają za prezentacje, wygląd elementow HTML na ekranie, wydrukach, czytnikach. Ma swoje reguły.</p>
-                        <h5>3.1. Budowa reguły CSS:</h5>
-                        <p>selector { <br /> właściowść: wartość; <br /> }</p>
-                        <h5>Sposoby stylowania:</h5>
-                        <ul>
-                            <li>w pliku html- w ramach znacznika &lt;head&gt; wpisujemy znacznik &lt;style&gt;</li>
-                            <li>w pliku css- dzięki zewnętrznemu skoroszycie stylów &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;, co umieszczamy w &lt;head&gt; pliku index.html
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>4. Magia programowania</h4>
-                        <p>Programowanie jak gotowanie- czyli wszystkie kroki w przepisie jak i programowania powinny być w określonej kolejności. Następujące po sobie kroki możemy nazwać algorytmami mogą być one przedstawione w formie schematu blokowego.<br
-                            /> Programowanie jest to przedstawienie "życia" i języka ludzkiego na język zrozumiały dla komputera.
-                        </p>
-                    </section>
-                </div>
+            <article class="week-summary">
+                <h3 class="week-summary__title">Tydzień 2</h3>
+                <section class="week-summary__description">
+                    <h4>1. Warstwy strony internetowej.</h4>
+                    <p>Cebula ma warstwy, ogry mają warstwy i strona www też ma warstwy.</p>
+                    <ul>
+                        <li>Warstwa 0 - Treść - najważniejsza część- bazowa</li>
+                        <li>Warstwa 1 - Semantyka - HTML</li>
+                        <li>Warstwa 2 - Prezentacja - CSS</li>
+                        <li>Wartswa 3 - Interakcja - JS</li>
+                    </ul>
+                    <h4>2. HTML</h4>
+                    <p>HTML to skrót od HyperText Markup Lanaguage. Jest to język znaczników, a nie programowania. Składa się ze znacznikó, tagów, elementów.</p>
+                    <h5>2.1. Budowa znacznika:</h5>
+                    <p>&lt;znacznik atrybut="wartość"&gt;treść&lt;/znacznik&gt;</p>
+                    <p>semantyczny= mający znaczenie</p>
+                    <h5>2.2. Znaczniki</h5>
+                    <ul>
+                        <li>&lt;main&gt; - główna część dokumnetu</li>
+                        <li>&lt;section&gt; - sekcje dokumentu, pod względem logicznego podziału </li>
+                        <li>&lt;article&gt; - samodzielne treści, artykuły w gazecie</li>
+                        <li>&lt;header&gt; - nagłówek dokumentu, sekcji, artykułu</li>
+                        <li>&lt;footer&gt; - stopka dokumnetu, sekcji, artykułu</li>
+                        <li>&lt;h1-h6&gt; - tesktowe nagłówki tytułowe- dokumentu, sekcji, artykułu</li>
+                        <li>&lt;p&gt; - paragraf, akapit</li>
+                    </ul>
+                    <h4>3. CSS</h4>
+                    <p>CSS to Cascading Style Sheets- kaskadowe arkusze stylów. Odpowiadają za prezentacje, wygląd elementow HTML na ekranie, wydrukach, czytnikach. Ma swoje reguły.</p>
+                    <h5>3.1. Budowa reguły CSS:</h5>
+                    <p>selector { <br> właściowść: wartość; <br> }</p>
+                    <h5>Sposoby stylowania:</h5>
+                    <ul>
+                        <li>w pliku html- w ramach znacznika &lt;head&gt; wpisujemy znacznik &lt;style&gt;</li>
+                        <li>w pliku css- dzięki zewnętrznemu skoroszycie stylów &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;, co umieszczamy w &lt;head&gt; pliku index.html
+                        </li>
+                    </ul>
+                    <h4>4. Magia programowania</h4>
+                    <p>Programowanie jak gotowanie- czyli wszystkie kroki w przepisie jak i programowania powinny być w określonej kolejności. Następujące po sobie kroki możemy nazwać algorytmami mogą być one przedstawione w formie schematu blokowego.<br>                        Programowanie jest to przedstawienie "życia" i języka ludzkiego na język zrozumiały dla komputera.
+                    </p>
+                </section>
             </article>
 
-            <article>
-                <div class="week3">
-                    <h3>Tydzień 3</h3>
-                    <section>
-                        <h4>1. Kanban- Japońskie planowanie</h4>
-                        <p>Ta metodologia należy do zwinnego podejscia organizacji pracy, jest po to aby śledzić swoje działania w projekcie jak i może być formą motywacji, gdy codziennie będziemy mogli zadania przerzucać. Narzędziem do tego może być np.
-                            Trello.
-                        </p>
-                        <ul>
-                            <li>TO DO- lista to zrobienia</li>
-                            <li>IN PROGRESS- lista zadań aktualnie realizowanych, zalecane jest aby zajmować się jednym zadaniem w danym czasie</li>
-                            <li>DONE- lista zadań które zostały zrealizowane</li>
-                        </ul>
-                        <p>często w projektach IT jest również TESTING- czyli zadania oddane do testów. Dobrą praktyką jest tworzenie również DoD- czyli Definition of Done, na podstawie zadań.</p>
-                    </section>
-                    <section>
-                        <h4>2. HTML II- atrybuty i znaczniki</h4>
-                        <ul>
-                            <li>&lt;br/&gt;- przenosi treść do nowej lini, jest to znacznik samozamykający</li>
-                            <li>&lt;b&gt;- pogrubienie tekstu- wyróżnik wizualny</li>
-                            <li>&lt;strong&gt;- pogrubienie tekstu, podkreśla wysoką rangę danego tekstu- wyróżnik semantyczny
-                            </li>
-                            <li>&lt;i&gt;- pochylenie tekstu- wyróżnik wizualny</li>
-                            <li>&lt;em&gt;- podkreśla inne znaczenie tekstu, np. ironię- wyróżnik semantyczny</li>
-                            <li>&lt;a href="" target=""&gt;- linki zewnętrzne/łącza wewnątrz dokumentu</li>
-                            <li>&lt;element id=""&gt;- identyfikuje element, przydaje się do nawigacji w obrębie dokumentu,np.&lt;a href="#nazwa-id"&gt;</li>
-                            <li>&lt;nav&gt;- nawigacja po dokumencie</li>
-                            <li>&lt;img src="" alt=""&gt;- obrazek z adresem url, a także alt- czyli podpis obrazka, wyświetlany alternatywnie w przeglądarce</li>
-                        </ul>
-                        <p>Znacznik, który powtarza się na każdej stronie powinien być wyciągnięty z &lt;main&gt;. Znacznik &lt;nav&gt;powinien być zawarty w &lt;header&gt;</p>
-                    </section>
-                    <section>
-                        <h4>3. Opowieść o wężu, kababie, wielbłądzie i Pascalu</h4>
-                        <p>Najtrudniejszą rzeczą podczas programowania jest na pewno wymyślanie nazw obiektów, elementów, żeby sobie w tym pomóc warto pamiętać o kilku rzeczach:</p>
-                        <ul>
-                            <li>nazwy w języku angielskim, nie polskim</li>
-                            <li>nie używaj spacji</li>
-                            <li>spisuj nazwy według jednego schematu i konsekwentnie go stosuj</li>
-                        </ul>
-                        <h5>3.1. Konwencje nazewnictwa- czyli jak zapisywać?</h5>
-                        <ul>
-                            <li>camelCase</li>
-                            <li>kebab-case</li>
-                            <li>snake_case</li>
-                            <li>PascalCase</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>4. CSS II</h4>
-                        <p>styl przy znaczniku z wykorzystaniem atrybutu style nazywamy stylem inline<br /> &lt;znacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt;. Nie zaleca się takiego stylowania, bo wprowadza chaos w pliku, czytelniej jest używać
-                            selektórów w odrębnym pliku style.css</p>
-                        <h5>4.1. Selektory</h5>
-                        <ul>
-                            <li>.class - to selektor klasy</li>
-                            <li>element - to byt w htmlu, np h1, header</li>
-                            <li>#id- powinno być unikalne</li>
-                        </ul>
-                        <p>Istnieje również !important- nie powinniśmy tego nadużywać, bo może wprowadzić chaos w kodzie. Zapisujemy go za daną właściwością.</p>
-                        <h5>4.2. Klasyfikacja medalowa CSS</h5>
-                        <ol>
-                            <li>!important</li>
-                            <li>style=""</li>
-                            <li>#id</li>
-                            <li>.class</li>
-                            <li>element</li>
-                        </ol>
-                        <p>Gdy wystąpi systuacja, że medale wyniosą po równo, pierwszeństwo ma selector umieszczony niżej w pliku .css. Unikajmy zagnieżdżeń, np. zamiast nav a, użyjmy mu klase .header-link.
-                        </p>
-                        <h5>4.3. Jak nazywać klasy?</h5>
-                        <ul>
-                            <li>staraj się używać pojedynczych słów z j.ang.</li>
-                            <li>jak nazwa jest dłuższa to użyj kebeb-case</li>
-                            <li>staraj się jasno określać co zawiera klasa</li>
-                            <li>nie zaczynaj od cyfry</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>5. Jak działa przelądarka</h4>
-                        <p>HTTP - Hypertext Transfer Protocol - protokół, którego używa przeglądaka<br /> Jest również HTTPS - Hypertext Transfer Protocol Secure.<br /> URL - Uniform Resource Locator- czyli adres, który wpisujemy w okienko przeglądarki.
-                            Każdy adres ma swoje składowe. Przykład: https://cotenfrontend:443/index.html?</p>
-                        <ul>
-                            <li>https:// - protokół jakim się posługujemy</li>
-                            <li>cotenfrontend.pl - to nazwa hosta (adres serwera)</li>
-                            <li>:443 - port (nie widzimy tego w przeglądarce gołym okiem;))</li>
-                            <li>/ - super ważny - root</li>
-                            <li>index.html - ścieżka dostępu do zasobu</li>
-                            <li>?parametr=wartość</li>
-                        </ul>
-                        <p>DNS - Domain Name System - jest to rozproszony system nazw, dzięki króremu wpisujemy słownie adres strony a on przetłumacza go na jej adres IP<br /> Przeglądarka parsuje i renderuje stronę = sprawdza składnie strony i zamienia
-                            kod HTML na to co widzimy, załadowując wszystkie css i inne zasoby. <br /> Serwer jest w trybie request-response, czyli przeglądarka wysyła zapytania i dostaje odpowiedź od serwera, ale czasami otrzymuje błędy.</p>
-                        <ul>
-                            <li>1xx - hold on - poczekaj jeszcze chwilę, za moment dostaniesz odpowiedź</li>
-                            <li>2xx - here you are - wszystko ok</li>
-                            <li>3xx - go away - pojawia się w momencie, gdy szukamy czegoś czego nie ma juz, ale przekierowujemy tam gdzie powinieneś się dostać</li>
-                            <li>4xx - you fucked up - błąd po stronie przeglądarki- np. 404</li>
-                            <li>5xx - I fucked up - błędy po stronie serwera i związane z jego obsługą</li>
-                        </ul>
-                        <p>Google Chrome umożliwia nam podgląd jakie mamy kody podczas wizyty na danej stronie. Robimy to za pomocą DevToolsów w zakładce Network.</p>
-                    </section>
-                    <section>
-                        <h4>6. Javascript</h4>
-                        <p>JavaScript jest językiem programowania, dzięki któremu możemy wykonywać różne interakcje. Najnowszy JS jest według standardu ECMAScript+.</p>
-                        <h5>6.1. Z czego składa się Javascript?</h5>
-                        <ul>
-                            <li>wartości- tj liczby dla matematyki</li>
-                            <li>operacje porównania</li>
-                            <li>literały</li>
-                            <li>zmienne</li>
-                            <li>obiekty</li>
-                            <li>funkcje</li>
-                        </ul>
-                    </section>
-                </div>
+            <article class="week-summary">
+                <h3 class="week-summary__title">Tydzień 3</h3>
+                <section class="week-summary__description">
+                    <h4>1. Kanban- Japońskie planowanie</h4>
+                    <p>Ta metodologia należy do zwinnego podejscia organizacji pracy, jest po to aby śledzić swoje działania w projekcie jak i może być formą motywacji, gdy codziennie będziemy mogli zadania przerzucać. Narzędziem do tego może być np. Trello.
+                    </p>
+                    <ul>
+                        <li>TO DO- lista to zrobienia</li>
+                        <li>IN PROGRESS- lista zadań aktualnie realizowanych, zalecane jest aby zajmować się jednym zadaniem w danym czasie</li>
+                        <li>DONE- lista zadań które zostały zrealizowane</li>
+                    </ul>
+                    <p>często w projektach IT jest również TESTING- czyli zadania oddane do testów. Dobrą praktyką jest tworzenie również DoD- czyli Definition of Done, na podstawie zadań.</p>
+                    <h4>2. HTML II- atrybuty i znaczniki</h4>
+                    <ul>
+                        <li>&lt;br/&gt;- przenosi treść do nowej lini, jest to znacznik samozamykający</li>
+                        <li>&lt;b&gt;- pogrubienie tekstu- wyróżnik wizualny</li>
+                        <li>&lt;strong&gt;- pogrubienie tekstu, podkreśla wysoką rangę danego tekstu- wyróżnik semantyczny
+                        </li>
+                        <li>&lt;i&gt;- pochylenie tekstu- wyróżnik wizualny</li>
+                        <li>&lt;em&gt;- podkreśla inne znaczenie tekstu, np. ironię- wyróżnik semantyczny</li>
+                        <li>&lt;a href="" target=""&gt;- linki zewnętrzne/łącza wewnątrz dokumentu</li>
+                        <li>&lt;element id=""&gt;- identyfikuje element, przydaje się do nawigacji w obrębie dokumentu,np.&lt;a href="#nazwa-id"&gt;</li>
+                        <li>&lt;nav&gt;- nawigacja po dokumencie</li>
+                        <li>&lt;img src="" alt=""&gt;- obrazek z adresem url, a także alt- czyli podpis obrazka, wyświetlany alternatywnie w przeglądarce</li>
+                    </ul>
+                    <p>Znacznik, który powtarza się na każdej stronie powinien być wyciągnięty z &lt;main&gt;. Znacznik &lt;nav&gt;powinien być zawarty w &lt;header&gt;</p>
+                    <h4>3. Opowieść o wężu, kababie, wielbłądzie i Pascalu</h4>
+                    <p>Najtrudniejszą rzeczą podczas programowania jest na pewno wymyślanie nazw obiektów, elementów, żeby sobie w tym pomóc warto pamiętać o kilku rzeczach:</p>
+                    <ul>
+                        <li>nazwy w języku angielskim, nie polskim</li>
+                        <li>nie używaj spacji</li>
+                        <li>spisuj nazwy według jednego schematu i konsekwentnie go stosuj</li>
+                    </ul>
+                    <h5>3.1. Konwencje nazewnictwa- czyli jak zapisywać?</h5>
+                    <ul>
+                        <li>camelCase</li>
+                        <li>kebab-case</li>
+                        <li>snake_case</li>
+                        <li>PascalCase</li>
+                    </ul>
+                    <h4>4. CSS II</h4>
+                    <p>styl przy znaczniku z wykorzystaniem atrybutu style nazywamy stylem inline<br> &lt;znacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt;. Nie zaleca się takiego stylowania, bo wprowadza chaos w pliku, czytelniej jest używać selektórów
+                        w odrębnym pliku style.css</p>
+                    <h5>4.1. Selektory</h5>
+                    <ul>
+                        <li>.class - to selektor klasy</li>
+                        <li>element - to byt w htmlu, np h1, header</li>
+                        <li>#id- powinno być unikalne</li>
+                    </ul>
+                    <p>Istnieje również !important- nie powinniśmy tego nadużywać, bo może wprowadzić chaos w kodzie. Zapisujemy go za daną właściwością.</p>
+                    <h5>4.2. Klasyfikacja medalowa CSS</h5>
+                    <ol>
+                        <li>!important</li>
+                        <li>style=""</li>
+                        <li>#id</li>
+                        <li>.class</li>
+                        <li>element</li>
+                    </ol>
+                    <p>Gdy wystąpi systuacja, że medale wyniosą po równo, pierwszeństwo ma selector umieszczony niżej w pliku .css. Unikajmy zagnieżdżeń, np. zamiast nav a, użyjmy mu klase .header-link.
+                    </p>
+                    <h5>4.3. Jak nazywać klasy?</h5>
+                    <ul>
+                        <li>staraj się używać pojedynczych słów z j.ang.</li>
+                        <li>jak nazwa jest dłuższa to użyj kebeb-case</li>
+                        <li>staraj się jasno określać co zawiera klasa</li>
+                        <li>nie zaczynaj od cyfry</li>
+                    </ul>
+                    <h4>5. Jak działa przelądarka</h4>
+                    <p>HTTP - Hypertext Transfer Protocol - protokół, którego używa przeglądaka<br> Jest również HTTPS - Hypertext Transfer Protocol Secure.<br> URL - Uniform Resource Locator- czyli adres, który wpisujemy w okienko przeglądarki. Każdy adres
+                        ma swoje składowe. Przykład: https://cotenfrontend:443/index.html?</p>
+                    <ul>
+                        <li>https:// - protokół jakim się posługujemy</li>
+                        <li>cotenfrontend.pl - to nazwa hosta (adres serwera)</li>
+                        <li>:443 - port (nie widzimy tego w przeglądarce gołym okiem;))</li>
+                        <li>/ - super ważny - root</li>
+                        <li>index.html - ścieżka dostępu do zasobu</li>
+                        <li>?parametr=wartość</li>
+                    </ul>
+                    <p>DNS - Domain Name System - jest to rozproszony system nazw, dzięki króremu wpisujemy słownie adres strony a on przetłumacza go na jej adres IP<br> Przeglądarka parsuje i renderuje stronę = sprawdza składnie strony i zamienia kod HTML
+                        na to co widzimy, załadowując wszystkie css i inne zasoby. <br> Serwer jest w trybie request-response, czyli przeglądarka wysyła zapytania i dostaje odpowiedź od serwera, ale czasami otrzymuje błędy.</p>
+                    <ul>
+                        <li>1xx - hold on - poczekaj jeszcze chwilę, za moment dostaniesz odpowiedź</li>
+                        <li>2xx - here you are - wszystko ok</li>
+                        <li>3xx - go away - pojawia się w momencie, gdy szukamy czegoś czego nie ma juz, ale przekierowujemy tam gdzie powinieneś się dostać</li>
+                        <li>4xx - you fucked up - błąd po stronie przeglądarki- np. 404</li>
+                        <li>5xx - I fucked up - błędy po stronie serwera i związane z jego obsługą</li>
+                    </ul>
+                    <p>Google Chrome umożliwia nam podgląd jakie mamy kody podczas wizyty na danej stronie. Robimy to za pomocą DevToolsów w zakładce Network.</p>
+                    <h4>6. Javascript</h4>
+                    <p>JavaScript jest językiem programowania, dzięki któremu możemy wykonywać różne interakcje. Najnowszy JS jest według standardu ECMAScript+.</p>
+                    <h5>6.1. Z czego składa się Javascript?</h5>
+                    <ul>
+                        <li>wartości- tj liczby dla matematyki</li>
+                        <li>operacje porównania</li>
+                        <li>literały</li>
+                        <li>zmienne</li>
+                        <li>obiekty</li>
+                        <li>funkcje</li>
+                    </ul>
+                </section>
             </article>
 
-            <article>
-                <div class="week4">
-                    <h3>Tydzień 4</h3>
-                    <section>
-                        <h4>1. GIT</h4>
-                        <p>GIT - jest to system kontroli wersji, który został stworzony przez Linusa Torvaldsa- twórcy Linuksa.</p>
-                        <h5>1.1. Po co jest potrzebny GIT?</h5>
-                        <ul>
-                            <li>projekt grupowy - widzimy nawzajem zmiany</li>
-                            <li>kontrola nad wersją projektu</li>
-                            <li>mozliwość rozbudowy różnych wersji projektu</li>
-                            <li>przegląd zmian i wracanie do nich</li>
-                            <li>działa lokalnie</li>
-                            <li>do działania zdalnego potrzebuje serwera np. Github</li>
-                        </ul>
-                        <h5>1.2. Konfiguracja GIT-a</h5>
-                        <ol>
-                            <li>git --version - sprawdzanie wersji gita</li>
-                            <li>git config --global user.name/"FirstName SurName"/</li>
-                            <li>git config --global user.email/email/</li>
-                            <li>git init - tworzenie repo</li>
-                        </ol>
-                        <h5>1.3. Commitowanie zmian</h5>
-                        <ol>
-                            <li>git status</li>
-                            <li>git add . - dodanie plików z danego katalogu</li>
-                            <li>git commit-m ""- opis zmian</li>
-                            <li>git push - wysyłanie danych do githuba</li>
-                        </ol>
-                        <h5>1.4. Dodatkowe komendy</h5>
-                        <ul>
-                            <li>ls -a - pokazywanie wszystkich plików</li>
-                            <li>commit - stan projektu na daną chwilę i opis tego co zmieniło się od ostatniej wersji
-                            </li>
-                            <li>gitk - pokazuje calą historię komunikatów</li>
-                            <li>clear - czyści terminal</li>
-                        </ul>
-                        <p>Git lens - narzędzie do podglądania repo i zmian <br /> git w VS - commitowanie z poziomu VS
-                        </p>
-                    </section>
-                    <section>
-                        <h4>2. Display, wymiary i overflow</h4>
-                        <p>Internet jest w 2D;), w tej lekcji jest mowa o znacznikach &lt;div&gt;, które często są nadużywane. W ramach ich mozemy stosować poniższe rzeczy.</p>
-                        <ol>
-                            <li>display:block; - jest to takie ułożenie że dwa elementy sa ułozone w kolumnie</li>
-                            <li>display:inline; - jest to takie ułożenie że dwa elementy sa obok siebie i wypełniaja stronę. Jeśli jest jeden element to wtedy box sciupia się do takiej wielkości jaka jest treść
-                            </li>
-                            <li>display:inline-block; - jest to taka właściwość, w ramach której mozemy zastosować wymiary. Elementy ułoża się wtedy w boxie o ustalonych rozmiarach</li>
-                        </ol>
-                        <ul>
-                            <li>width/hight - które spowodują ze elementy są wrażliwe na te wielkości i dopasowują sie do nich.</li>
-                            <li>min/max width i min/max hight </li>
-                        </ul>
-                        <ol>
-                            <li>overflow</li>
-                        </ol>
-                        <ul>
-                            <li>hidden - przepełniona wartość pozostanie ukryta</li>
-                            <li>visible - wartość domyślna - treść nie jest obcinana, gdy wychodzi poza pole</li>
-                            <li>scroll - również nam ukrywa ale możemy podejrzeć text za pomoca suwaka</li>
-                            <li>auto - jeśli treść wychodzi poza pole to również pojawia nam sie opcja suwaka</li>
-                            <li>initial - używa widocznej wartości domyślnej</li>
-                            <li>inherit - (dziedziczenie) ustawia przepełnienie na wartość jego elementu nadrzędnego
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>3. Jednostki</h4>
-                        <ul>
-                            <li>px - podstawowa jednostka - piksel, np 1px</li>
-                            <li>% - procenty, np. 50% danego elementu</li>
-                            <li>vw - viewport width, czyli jest to procent z całego okna</li>
-                            <li>vh - viewport height, czyli jest to procent z całego okna</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>4. Box model (padding, border, margin)</h4>
-                        <p>jest to niewidzialny prostokąt którym są otoczone wszystkie elementy.</p>
-                        <img src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png" alt="boxmodel">
-                        <h5>4.1. padding - wewnętrzny margines</h5>
-                        <p>- jeśli chcemy zapisać je w jednej lini to musimy wartości wpisać według wskazówek zegara
-                            <br /> -jeśli podamy tylko dwie wartości- traktujemy je wtedy jako wartości lustrzane, czyli dla top i bottom będzie taka sama wartość i dla left i right będzie taka sama</p>
-                        <h5>4.2. border - zewnętrzny margines- obramowanie</h5>
-                        <p>- width - określamy grubość <br />- style - jaki rodzaj chcemy używać -solid/dotted/dash/double/groove/ridge/inset/outset
-                            <br />- color - kolor<br />- radius - zaokrąglenie
-                        </p>
-                        <h5>margin - odległośc od innych elementów, zapisujemy jak w paddingu</h5>
-                        <p>- auto - wartość która jest różna w zależności jaki jest display.<br />- block- elementy ułożą się na środku body, w równych odstępach, ale musi mieć ustaloną szerokość, zeby wiadomo było do czego ma centrować.<br />- inline- nic
-                            nam nie da przyjęcie wartości auto </p>
-                    </section>
-                    <section>
-                        <h4>5. Box-sizing</h4>
-                        <p>Domyślną wartością naszego box-sizing jest content-box, według ktorej rozumiemy, że jeśli ustalimy sobie width na elemencie to wtedy nie ma to wpływu na padding i margin.
-                            <br />Aby móc brac pod uwagę całą szerokośc naszego elementu (wraz z paddingiem, borderem i marginem, ale bez zmieniania właściwoścci dla wszystkiego
-                        </p>
-                    </section>
-                    <section>
-                        <h4>6. Position</h4>
-                        <ul>
-                            <li>static</li>
-                            <li>relative</li>
-                            <li>absolute</li>
-                            <li>fixed - przyklejony do strony, np nagłówek</li>
-                            <li>sticky - przykleja sie do ekranu, ale dopiero w momencie gdy dotyka końca ekranu
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>7. Float</h4>
-                        <p>Nie powinniśmy używać tego to centrowania, wyrownywania, np. jeśli użyjemy float:left, zbliza nam nasz element najbliżej lewej strony jak to tylko możliwe.</p>
-                    </section>
-                    <section>
-                        <h4>8. JS:Typy danych i immutability</h4>
-                        <p>Zmienna to nie wartość, ona jedynie wskazuje nam na jakieś wartości, które przyjmujemy. W każdym języku programowania sa zmienne, w JS nazywamy je camelCasem. Zmienne są jak młody pelikan- łykną wszystko.</p>
-                        <h5>8.1.Zmienne w JS</h5>
-                        <ul>
-                            <li>let - zmienne, których połączenie możemy przypinać, ale ich nie definiujemy, wprowadzamy je tylko raz</li>
-                        </ul>
-                        <p>let isHappy = false;<br /> isHappy = tak;<br /> isHappy = true;</p>
-                        <ul>
-                            <li>const - zmienne mające stale połączenie z jedną wartością</li>
-                        </ul>
-                        <p>const name = 'Mariola';<br />const age = 28;<br />przykład gniazdka i ładowarki</p>
-                        <ul>
-                            <li>var</li>
-                        </ul>
-                        <h5>8.2. Typy proste w JS = primitive values</h5>
-                        <ul>
-                            <li>string - 'tekstowy'</li>
-                            <li>number - liczbowy</li>
-                            <li>bigint - liczba powyżej 2 do 53</li>
-                            <li>boolen - wartości logiczne true/false</li>
-                            <li>null - wartośc celowo niezdefiniowana</li>
-                            <li>undefined - brak definicji</li>
-                            <li>symbol - tworzy unikalne opakowanie</li>
-                        </ul>
-                        <p>Sprawdzanie jakiego typu jest zmienna- typeof nazwa zmiennej. Ważne jest to że nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi a zmiennymi.=Immutability=niezmienność
-                        </p>
-                    </section>
-                    <section<>
-                        <h4>9. BEM = Block Element Modifier</h4>
-                        <p>Powstał przy pracy nad wysszukiwarką w Rosji, polega na spejalnym ukladzie nazw klas.</p>
-                        <h5>9.1 Dlaczego powstał?</h5>
-                        <ul>
-                            <li>problem z logicznym nazywaniem klas</li>
-                            <li>brak ujednoliconego sposobu stylowania</li>
-                            <li>importanty, nadpisywanie rzeczy</li>
-                            <li>brak narzędzia odwzorowania struktur html w css</li>
-                            <li>stylowanie kilkoma klasami, powtarzające się nazwy</li>
-                        </ul>
-                        <h5>9.2. Z czego się składa BEM</h5>
-                        <ol>
-                            <li>Block - nadrzędny element</li>
-                            <li>Element - część bloku (nie musi być bezpośrednim dzieckiem)</li>
-                            <li>Modifier - modyfikator - jeśli element występuje w kilku wariacjach tworzymy dodatkową klasę</li>
-                        </ol>
-                        <h5>9.3. Sposób zapisu</h5>
-                        <p>block__element--modifier, aby lepiej to wyjaśnić poniżej przykład ze zdjęciem</p>
-                        <img src="bem.PNG" alt="bem-picture">
-                        <p>a także zobrazowanie jak to działa w htmlu</p>
-                        <img src="bem- html.PNG" alt="bem-picture- html">
-                        <p>a tutaj jako to wygląda w css</p>
-                        <img src="bem- css.PNG" alt="bem-picture- css">
-                        <h5>9.4. Co warto zapamiętać?</h5>
-                        <ol>
-                            <li>szukamy elementów na stronei i dzielimy ją na bloki</li>
-                            <li>myślimy o elementach składowych- plan strony i jej analiza-selekcja</li>
-                            <li>tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla niego wartości, nie przepisujemy rzeczy z klasy bazowej!!!)</li>
-                        </ol>
-        </section>
-        <section>
-            <h4>10. DOMowe przedszkole</h4>
-            <p>DOM- to Document Object Model, kóry możemuy podejrzeć z DevTolsach, ale należy pamietać, że to co widzimy w VS to nie jest DOM, bo to jest jedynie instrukcja jak ma być zbudowana nasza strona, a w DevTolsach jest już gotowy produkt- normalnie
-                jak IKEA;)</p>
-            <p></p>
-            <h5>To co to jest ten DOM?</h5>
-            <ul>
-                <li>Dom to HTML w DevTolsach</li>
-                <li>JS&hearts;DOM i moze go modyfikować np za pomocą documnent.querySelector('.selector tak jak w css')</li>
-                <li>funkcja querySelector zwraca node(węzeł) z HTML-a</li>
-                <li>korzystając z BEMa tworzymy dla JS dodatkową klasę</li>
-            </ul>
-        </section>
-        </section>
-        </div>
-        </article>
-        </section>
-        <footer class="footer">
-            <br />
-        </footer>
+            <article class="week-summary">
+                <h3 class="week-summary__title">Tydzień 4</h3>
+                <section class="week-summary__description">
+                    <h4>1. GIT</h4>
+                    <p>GIT - jest to system kontroli wersji, który został stworzony przez Linusa Torvaldsa- twórcy Linuksa.
+                    </p>
+                    <h5>1.1. Po co jest potrzebny GIT?</h5>
+                    <ul>
+                        <li>projekt grupowy - widzimy nawzajem zmiany</li>
+                        <li>kontrola nad wersją projektu</li>
+                        <li>mozliwość rozbudowy różnych wersji projektu</li>
+                        <li>przegląd zmian i wracanie do nich</li>
+                        <li>działa lokalnie</li>
+                        <li>do działania zdalnego potrzebuje serwera np. Github</li>
+                    </ul>
+                    <h5>1.2. Konfiguracja GIT-a</h5>
+                    <ol>
+                        <li>git --version - sprawdzanie wersji gita</li>
+                        <li>git config --global user.name/"FirstName SurName"/</li>
+                        <li>git config --global user.email/email/</li>
+                        <li>git init - tworzenie repo</li>
+                    </ol>
+                    <h5>1.3. Commitowanie zmian</h5>
+                    <ol>
+                        <li>git status</li>
+                        <li>git add . - dodanie plików z danego katalogu</li>
+                        <li>git commit-m ""- opis zmian</li>
+                        <li>git push - wysyłanie danych do githuba</li>
+                    </ol>
+                    <h5>1.4. Dodatkowe komendy</h5>
+                    <ul>
+                        <li>ls -a - pokazywanie wszystkich plików</li>
+                        <li>commit - stan projektu na daną chwilę i opis tego co zmieniło się od ostatniej wersji
+                        </li>
+                        <li>gitk - pokazuje calą historię komunikatów</li>
+                        <li>clear - czyści terminal</li>
+                    </ul>
+                    <p>Git lens - narzędzie do podglądania repo i zmian <br> git w VS - commitowanie z poziomu VS
+                    </p>
+                    <h4>2. Display, wymiary i overflow</h4>
+                    <p>Internet jest w 2D;), w tej lekcji jest mowa o znacznikach &lt;div&gt;, które często są nadużywane. W ramach ich mozemy stosować poniższe rzeczy.</p>
+                    <ol>
+                        <li>display:block; - jest to takie ułożenie że dwa elementy sa ułozone w kolumnie</li>
+                        <li>display:inline; - jest to takie ułożenie że dwa elementy sa obok siebie i wypełniaja stronę. Jeśli jest jeden element to wtedy box sciupia się do takiej wielkości jaka jest treść
+                        </li>
+                        <li>display:inline-block; - jest to taka właściwość, w ramach której mozemy zastosować wymiary. Elementy ułoża się wtedy w boxie o ustalonych rozmiarach</li>
+                    </ol>
+                    <ul>
+                        <li>width/hight - które spowodują ze elementy są wrażliwe na te wielkości i dopasowują sie do nich.
+                        </li>
+                        <li>min/max width i min/max hight </li>
+                    </ul>
+                    <ol>
+                        <li>overflow</li>
+                    </ol>
+                    <ul>
+                        <li>hidden - przepełniona wartość pozostanie ukryta</li>
+                        <li>visible - wartość domyślna - treść nie jest obcinana, gdy wychodzi poza pole</li>
+                        <li>scroll - również nam ukrywa ale możemy podejrzeć text za pomoca suwaka</li>
+                        <li>auto - jeśli treść wychodzi poza pole to również pojawia nam sie opcja suwaka</li>
+                        <li>initial - używa widocznej wartości domyślnej</li>
+                        <li>inherit - (dziedziczenie) ustawia przepełnienie na wartość jego elementu nadrzędnego
+                        </li>
+                    </ul>
+                    <h4>3. Jednostki</h4>
+                    <ul>
+                        <li>px - podstawowa jednostka - piksel, np 1px</li>
+                        <li>% - procenty, np. 50% danego elementu</li>
+                        <li>vw - viewport width, czyli jest to procent z całego okna</li>
+                        <li>vh - viewport height, czyli jest to procent z całego okna</li>
+                    </ul>
+                    <h4>4. Box model (padding, border, margin)</h4>
+                    <p>jest to niewidzialny prostokąt którym są otoczone wszystkie elementy.</p>
+                    <img src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png" alt="boxmodel">
+                    <h5>4.1. padding - wewnętrzny margines</h5>
+                    <p>- jeśli chcemy zapisać je w jednej lini to musimy wartości wpisać według wskazówek zegara
+                        <br> -jeśli podamy tylko dwie wartości- traktujemy je wtedy jako wartości lustrzane, czyli dla top i bottom będzie taka sama wartość i dla left i right będzie taka sama</p>
+                    <h5>4.2. border - zewnętrzny margines- obramowanie</h5>
+                    <p>- width - określamy grubość <br>- style - jaki rodzaj chcemy używać -solid/dotted/dash/double/groove/ridge/inset/outset
+                        <br>- color - kolor<br>- radius - zaokrąglenie
+                    </p>
+                    <h5>margin - odległośc od innych elementów, zapisujemy jak w paddingu</h5>
+                    <p>- auto - wartość która jest różna w zależności jaki jest display.<br>- block- elementy ułożą się na środku body, w równych odstępach, ale musi mieć ustaloną szerokość, zeby wiadomo było do czego ma centrować.<br>- inline- nic nam nie
+                        da przyjęcie wartości auto </p>
+                    <h4>5. Box-sizing</h4>
+                    <p>Domyślną wartością naszego box-sizing jest content-box, według ktorej rozumiemy, że jeśli ustalimy sobie width na elemencie to wtedy nie ma to wpływu na padding i margin.
+                        <br>Aby móc brac pod uwagę całą szerokośc naszego elementu (wraz z paddingiem, borderem i marginem, ale bez zmieniania właściwoścci dla wszystkiego
+                    </p>
+                    <h4>6. Position</h4>
+                    <ul>
+                        <li>static</li>
+                        <li>relative</li>
+                        <li>absolute</li>
+                        <li>fixed - przyklejony do strony, np nagłówek</li>
+                        <li>sticky - przykleja sie do ekranu, ale dopiero w momencie gdy dotyka końca ekranu
+                        </li>
+                    </ul>
+                    <h4>7. Float</h4>
+                    <p>Nie powinniśmy używać tego to centrowania, wyrownywania, np. jeśli użyjemy float:left, zbliza nam nasz element najbliżej lewej strony jak to tylko możliwe.</p>
+                    <h4>8. JS:Typy danych i immutability</h4>
+                    <p>Zmienna to nie wartość, ona jedynie wskazuje nam na jakieś wartości, które przyjmujemy. W każdym języku programowania sa zmienne, w JS nazywamy je camelCasem. Zmienne są jak młody pelikan- łykną wszystko.</p>
+                    <h5>8.1.Zmienne w JS</h5>
+                    <ul>
+                        <li>let - zmienne, których połączenie możemy przypinać, ale ich nie definiujemy, wprowadzamy je tylko raz</li>
+                    </ul>
+                    <p>let isHappy = false;<br> isHappy = tak;<br> isHappy = true;</p>
+                    <ul>
+                        <li>const - zmienne mające stale połączenie z jedną wartością</li>
+                    </ul>
+                    <p>const name = 'Mariola';<br>const age = 28;<br>przykład gniazdka i ładowarki</p>
+                    <ul>
+                        <li>var</li>
+                    </ul>
+                    <h5>8.2. Typy proste w JS = primitive values</h5>
+                    <ul>
+                        <li>string - 'tekstowy'</li>
+                        <li>number - liczbowy</li>
+                        <li>bigint - liczba powyżej 2 do 53</li>
+                        <li>boolen - wartości logiczne true/false</li>
+                        <li>null - wartośc celowo niezdefiniowana</li>
+                        <li>undefined - brak definicji</li>
+                        <li>symbol - tworzy unikalne opakowanie</li>
+                    </ul>
+                    <p>Sprawdzanie jakiego typu jest zmienna- typeof nazwa zmiennej. Ważne jest to że nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi a zmiennymi.=Immutability=niezmienność
+                    </p>
+                    <h4>9. BEM = Block Element Modifier</h4>
+                    <p>Powstał przy pracy nad wysszukiwarką w Rosji, polega na spejalnym ukladzie nazw klas.</p>
+                    <h5>9.1 Dlaczego powstał?</h5>
+                    <ul>
+                        <li>problem z logicznym nazywaniem klas</li>
+                        <li>brak ujednoliconego sposobu stylowania</li>
+                        <li>importanty, nadpisywanie rzeczy</li>
+                        <li>brak narzędzia odwzorowania struktur html w css</li>
+                        <li>stylowanie kilkoma klasami, powtarzające się nazwy</li>
+                    </ul>
+                    <h5>9.2. Z czego się składa BEM</h5>
+                    <ol>
+                        <li>Block - nadrzędny element</li>
+                        <li>Element - część bloku (nie musi być bezpośrednim dzieckiem)</li>
+                        <li>Modifier - modyfikator - jeśli element występuje w kilku wariacjach tworzymy dodatkową klasę
+                        </li>
+                    </ol>
+                    <h5>9.3. Sposób zapisu</h5>
+                    <p>block__element--modifier, aby lepiej to wyjaśnić poniżej przykład ze zdjęciem</p>
+                    <img src="bem.PNG" alt="bem-picture">
+                    <p>a także zobrazowanie jak to działa w htmlu</p>
+                    <img src="bem- html.PNG" alt="bem-picture- html">
+                    <p>a tutaj jako to wygląda w css</p>
+                    <img src="bem- css.PNG" alt="bem-picture- css">
+                    <h5>9.4. Co warto zapamiętać?</h5>
+                    <ol>
+                        <li>szukamy elementów na stronei i dzielimy ją na bloki</li>
+                        <li>myślimy o elementach składowych- plan strony i jej analiza-selekcja</li>
+                        <li>tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla niego wartości, nie przepisujemy rzeczy z klasy bazowej!!!)</li>
+                    </ol>
+                    <h4>10. DOMowe przedszkole</h4>
+                    <p>DOM- to Document Object Model, kóry możemuy podejrzeć z DevTolsach, ale należy pamietać, że to co widzimy w VS to nie jest DOM, bo to jest jedynie instrukcja jak ma być zbudowana nasza strona, a w DevTolsach jest już gotowy produkt-
+                        normalnie jak IKEA;)</p>
+                    <p></p>
+                    <h5>To co to jest ten DOM?</h5>
+                    <ul>
+                        <li>Dom to HTML w DevTolsach</li>
+                        <li>JS&hearts;DOM i moze go modyfikować np za pomocą documnent.querySelector('.selector tak jak w css')</li>
+                        <li>funkcja querySelector zwraca node(węzeł) z HTML-a</li>
+                        <li>korzystając z BEMa tworzymy dla JS dodatkową klasę</li>
+                    </ul>
+                    </section<>
+            </article>
+            </section>
     </main>
+    <footer class="footer">
+        <br />
+    </footer>
     <script src="main.js"></script>
 
 </body>
