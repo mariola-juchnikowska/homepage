@@ -1,8 +1,15 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+*,
+*::after,
+*:before {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Raleway;
     letter-spacing: 0.1rem;
+    width: 100%;
 }
 
 .header {
@@ -33,18 +40,16 @@ body {
     text-align: center;
     text-transform: uppercase;
     background: #7C7C7C;
+    color: whitesmoke;
 }
 
 .about {
-    background: #7C7C7C;
-    display: inline-flex;
-    width: 100%;
-    box-sizing: content-box;
-}
-
-.about--title {
+    border: 0.4rem solid #7C7C7C;
+    display: flex;
+    width: 80%;
     text-align: center;
-    display: inline;
+    flex-direction: row;
+    margin: 0rem 10rem;
 }
 
 .about__img {
@@ -56,11 +61,32 @@ body {
 }
 
 .about__description {
-    width: 800px;
+    width: auto;
     display: inherit;
     text-align: center;
-    margin: 2rem;
-    padding: 2rem;
+    align-self: center;
+    margin: 0rem 1rem;
+}
+
+.notes__title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background: lightgrey;
+}
+
+.week-summary {
+    border: 0.1rem solid #CF5C36;
+    display: inline-table;
+    justify-content: space-around;
+    max-width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    ;
+}
+
+.notes__img {
+    width: 30rem;
 }
 
 
