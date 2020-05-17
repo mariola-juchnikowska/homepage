@@ -50,6 +50,7 @@ body {
     margin: 0rem 10rem;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 26%, rgba(121, 9, 102, 0.17130602240896353) 63%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
 }
 
 .about__img {
@@ -90,7 +91,11 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #CF5C36;
-    border:
+}
+
+.week-summary__description {
+    height: 700px;
+    overflow: scroll;
 }
 
 .week-summary__description--title {
