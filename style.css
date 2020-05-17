@@ -14,7 +14,7 @@ body {
 
 .header {
     background: #000000;
-    width: 100%;
+    max-width: 100%;
     margin: block;
 }
 
@@ -44,12 +44,12 @@ body {
 }
 
 .about {
-    border: 0.4rem solid #7C7C7C;
     display: flex;
-    width: 80%;
     text-align: center;
     flex-direction: row;
     margin: 0rem 10rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 26%, rgba(121, 9, 102, 0.17130602240896353) 63%, rgba(0, 212, 255, 1) 100%);
 }
 
 .about__img {
@@ -66,6 +66,7 @@ body {
     text-align: center;
     align-self: center;
     margin: 0rem 1rem;
+    color: white;
 }
 
 .notes__title {
@@ -105,4 +106,14 @@ body {
 
 .notes__img {
     width: 30rem;
+}
+
+.footer {
+    background: #000000;
+    max-width: 100%;
+    margin: block;
+    color: whitesmoke;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
 }
