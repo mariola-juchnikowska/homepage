@@ -35,3 +35,14 @@ createContent('.week-summary__description--js', 'Witajcie');
 const greet = (age, name) => {
     console.log(`Witaj użytkowniku, nazywam się ${name} i mam ${age} lat.`);
 }
+
+if ('Java' != 'JavaScript') {
+    console.log('Java to nie Javascript')
+}
+
+//opartory:
+//== - operator porównania z uwazgledniem konwersji 
+
+//=== - z uwzględnienim rozróżniania typów
+
+//typeoff-zmienna
