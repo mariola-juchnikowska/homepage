@@ -25,20 +25,20 @@ alert('Takie a`la coockiesy ;)');
 //greet('33', 'kondziu');
 //greet(age, name);
 
-function createContent(querySelectorContent, content) {
-    const element = document.querySelector(querySelectorContent);
-    element.innerHTML = content;
-}
-createContent('.week-summary__description--js', 'Witajcie');
+//function createContent(querySelectorContent, content) {
+// const element = document.querySelector(querySelectorContent);
+// element.innerHTML = content;
+//}
+//createContent('.week-summary__description--js', 'Witajcie');
 
 
-const greet = (age, name) => {
-    console.log(`Witaj użytkowniku, nazywam się ${name} i mam ${age} lat.`);
-}
+//const greet = (age, name) => {
+//  console.log(`Witaj użytkowniku, nazywam się ${name} i mam ${age} lat.`);
+//}
 
-if ('Java' != 'JavaScript') {
-    console.log('Java to nie Javascript')
-}
+//if ('Java' != 'JavaScript') {
+// console.log('Java to nie Javascript')
+//}
 
 //opartory:
 //== - operator porównania z uwazgledniem konwersji 
@@ -46,3 +46,34 @@ if ('Java' != 'JavaScript') {
 //=== - z uwzględnienim rozróżniania typów
 
 //typeoff-zmienna
+
+//main__heading--js
+
+//element.addEventListener(type,listener[,options])
+
+
+//na podstawie kliknięcia w przycisk zmieniamy tresć nagłówka h1, który ma przypisaną klase --js
+const button = document.querySelector('.main__heading--button');
+console.log(button)
+const myClick = () => {
+    const heading = document.querySelector('.main__heading--js');
+    heading.innerHTML = 'Co to za dziwny button?';
+    heading.classList.add('klasa-z-js');
+}
+button.addEventListener('click', myClick);
+
+//przepis na hamburger menu:
+//1. Nawigacja
+//2. Style do nawigacji na mobile 
+//3. Style do nawigacji na desktop
+//4. Przycisk do pokazywania/ukrywania (zmiana klasy)
+//5. Kod JS do podpięcia się pod przycisk
+//6. Kod JS do zmiany klasy
+
+//element.classList (add, remove, toggle, contains)
+
+const menu = document.querySelector('.menu--js');
+menu.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js')
+    nav.classList.toggle('navigation--open');
+})
