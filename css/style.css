@@ -48,6 +48,10 @@ body {
     margin: 2rem;
 }
 
+.navigation__link:hover {
+    color: rgb(243, 153, 8);
+}
+
 .main__header {
     display: block;
     text-align: center;
@@ -104,6 +108,24 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #CF5C36;
+}
+
+.week-summary__week::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #CF5C36;
+    border-radius: 50%;
+}
+
+.week-summary__week::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #CF5C36;
+    border-radius: 50%;
 }
 
 .week-summary__description {

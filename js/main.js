@@ -1,4 +1,4 @@
-alert('Takie a`la coockiesy ;)');
+//alert('Takie a`la coockiesy ;)');
 
 //const heading = document.querySelector('.page__content--js');
 //console.log(heading);
@@ -53,14 +53,14 @@ alert('Takie a`la coockiesy ;)');
 
 
 //na podstawie kliknięcia w przycisk zmieniamy tresć nagłówka h1, który ma przypisaną klase --js
-const button = document.querySelector('.main__heading--button');
-console.log(button)
-const myClick = () => {
-    const heading = document.querySelector('.main__heading--js');
-    heading.innerHTML = 'Co to za dziwny button?';
-    heading.classList.add('klasa-z-js');
-}
-button.addEventListener('click', myClick);
+//const button = document.querySelector('.main__heading--button');
+//console.log(button)
+//const myClick = () => {
+//  const heading = document.querySelector('.main__heading--js');
+//heading.innerHTML = 'Co to za dziwny button?';
+//heading.classList.add('klasa-z-js');
+//}
+//button.addEventListener('click', myClick);
 
 //przepis na hamburger menu:
 //1. Nawigacja
@@ -72,8 +72,11 @@ button.addEventListener('click', myClick);
 
 //element.classList (add, remove, toggle, contains)
 
-const menu = document.querySelector('.menu--js');
-menu.addEventListener('click', () => {
-    const nav = document.querySelector('.navigation--js')
-    nav.classList.toggle('navigation--open');
-})
+//const menu = document.querySelector('.menu--js');
+//menu.addEventListener('click', () => {
+//  const nav = document.querySelector('.navigation--js')
+// nav.classList.toggle('navigation--open');
+//})
+
+const name = 'Mariola';
+console.log(`${name}`);
