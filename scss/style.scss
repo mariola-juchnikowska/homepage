@@ -1,0 +1,185 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Raleway;
+    letter-spacing: 0.1rem;
+    width: 100%;
+}
+
+
+/*.header {
+    background: #000000;
+    min-height: 78px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}*/
+
+.header__logo {
+    color: #CF5C36;
+    text-decoration: none;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.navigation {
+    padding: 16px;
+    display: none;
+}
+
+.navigation--open {
+    display: block;
+}
+
+.navigation__link {
+    color: #EFC88B;
+    display: block;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+.navigation__link:hover {
+    color: rgb(243, 153, 8);
+}
+
+.main__header {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background: #7C7C7C;
+    color: whitesmoke;
+}
+
+.about {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 0rem 10rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 26%, rgba(121, 9, 102, 0.17130602240896353) 63%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+}
+
+.about__img {
+    border-radius: 34% 20% 50% 12%;
+    display: block;
+    margin: 2rem;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+.about__description {
+    width: auto;
+    display: inherit;
+    text-align: center;
+    align-self: center;
+    margin: 0rem 1rem;
+    color: white;
+}
+
+.notes__title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background: lightgrey;
+}
+
+.week-summary {
+    border: 0.1rem solid #CF5C36;
+    display: inline-table;
+    justify-content: space-around;
+    max-width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.week-summary__week {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #CF5C36;
+}
+
+.week-summary__week::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #CF5C36;
+    border-radius: 50%;
+}
+
+.week-summary__week::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #CF5C36;
+    border-radius: 50%;
+}
+
+.week-summary__description {
+    height: 700px;
+    overflow: scroll;
+}
+
+.week-summary__description--title {
+    text-decoration: underline;
+    color: #EFC88B;
+    font-weight: bold;
+}
+
+.week-summary__description--subtitle {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.notes__img {
+    width: 30rem;
+}
+
+.footer {
+    background: #000000;
+    max-width: 100%;
+    margin: block;
+    color: whitesmoke;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.klasa-z-js {
+    background: yellow;
+}
+
+.menu {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    border: none;
+    background: none;
+}
+
+@media (min-width:768px) {
+    .menu {
+        display: none;
+    }
+    .navigation {
+        text-align: right;
+        display: flex;
+        padding: 16px;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Raleway;
+    }
+}
