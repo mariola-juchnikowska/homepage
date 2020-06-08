@@ -5,7 +5,7 @@
     "main": "main.js",
     "scripts": {
         "start": "node main.js",
-        "sass": "npx node-sass -w scss/style.scss style.css",
+        "sass": "npx node-sass -w scss/style.scss css/style.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
